@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html, body{
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    font-weight: 400;
+    background-image: linear-gradient(to top left, #000 0%, #753682 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .button,
+  button,
+  input[type='button'],
+  input[type='reset'],
+  input[type='submit'] {
+    background-color: #f3c620 !important;
+    border: 0.1rem solid #f3c620 !important;
+    color: #444 !important;
+    margin-top: 5rem;
+    }
+
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+
+  #board {
+    /* background-color: #01431e; */
+    background: repeating-linear-gradient(transparent, #4d9f0c 4px),
+            repeating-linear-gradient(transparent, #01431e 3px);
+    border: 40px solid #3c1912;
+    border-radius: 30%;
+  }
+
+  input {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  frame {
+      display: block;
+
+  }
+
+  canvas{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Used CSS-Tricks guide: https://css-tricks.com/how-to-create-neon-text-with-css/ */
+  .neonText {
+    color: #fff;
+    animation: pulsate 0.11s ease-in-out infinite alternate;  
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f3c620,
+      0 0 82px #f3c620,
+      0 0 92px #f3c620,
+      0 0 102px #f3c620,
+      0 0 151px #f3c620;
+      padding: 2rem;
+      margin: 2rem;
+  }
+
+  #effectDisplay {
+    color: #fff;
+    font-size: 5rem;
+    padding: 5rem;
+  }
